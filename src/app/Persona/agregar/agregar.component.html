@@ -1,0 +1,20 @@
+<div class="container col-md-6">
+  <div class="alert alert-primary" role="alert">
+    Add Student
+  </div>
+  <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1"></label> 
+        <input [(ngModel)]="student.name" name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="currentName">
+        <small id="currentName" class="form-text text-muted">Name</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1"></label>
+        <input [(ngModel)]="student.passportNumber" name="passportNumber" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="currenPassport">
+        <small id="currenPassport" class="form-text text-muted">Passport number</small>
+      </div>
+      <button (click)="crear()" type="button" class="btn btn-primary">
+        Create
+      </button>
+  </form>
+</div>
